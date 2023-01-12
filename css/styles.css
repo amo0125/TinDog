@@ -1,0 +1,195 @@
+    #title {
+        background-color : #ff4c68;
+
+    }
+
+    body {
+
+        font-family: "Montserrat-Light";
+    }
+
+    h1{
+        
+        font-family: 'Montserrat';
+        font-size: 3.5rem;
+        line-height: 1.5;
+        
+        }
+
+    .h1font{
+        color:#fff;
+
+
+    }    
+
+    .container-fluid {
+        padding: 3% 15% 7%;
+}
+
+/* 上下3%左右15%下7% 下有10%padding */
+
+/* nav bar */
+
+    .navbar{
+        padding:0 0 4.5rem;
+
+    }
+
+    .navbar-brand{
+        font-family: "Ubuntu";
+        font-size: 2.5rem;
+        font-weight: bold;
+
+    }
+
+    .nav.item{
+        padding: 0 18px;
+    }
+
+    .nav-link{
+        font-size: 1.2rem;
+        font-family: "Montserrat-Light";
+    }
+
+    /* download-button */
+
+    .download-button{
+        margin: 5% 3% 5% 0;
+    }
+    /* 上右左底 */
+
+    .title-image{
+        width: 60%;
+        transform: rotate(25deg);
+        position: absolute;
+        right: 30%;
+    }
+/* 從margib right過來30%*/
+
+    .image-div {
+        position: relative;
+    }
+/* 一定要設母元素為一個relative 然後子元素的absolute設置的width等的size才會被採用 */
+/* Remember that these values will be relative to the next parent element with relative (or absolute) positioning.
+ If there is no such parent, it will default all the way back up to the element itself meaning it will be placed relative to the page itself. */
+    h3{
+        font-size: 1.5rem;
+        font-family: "Montserrat";
+        
+    }
+    
+    p{
+        color: #8f8f8f;
+    }
+
+    #features {
+        padding: 7% 15%;
+        background-color: #fff;
+        position: relative;
+    }
+
+    /* both positioned elements -> both dont have z-index -> both are in html flow -> the one below is on top
+    features section 應該在圖片之後被套用 按照html flow 我設置的白色背景會蓋過image */
+
+    .feature-box{
+        text-align: center;
+        padding: 5%;
+    }
+
+    .icon{
+        color: #ef8172;
+        margin-bottom: 1rem;
+    }
+
+    .icon:hover {
+        color:#ff4c68
+    }
+
+    #testimonials {
+        text-align: center;
+        background-color: #ef8172;
+        color: #fff;
+    }
+
+    .carousel-item {
+        padding: 7% 15%;
+
+    }    
+
+    .t-image {
+        width: 10%;
+        border-radius: 100%;
+        margin: 20px;
+
+    }
+
+    h2{
+        font-family: "Montserrat";
+        line-height: 1.5;
+        font-size: 3rem;
+    }
+
+    #press {
+        background-color: #ef8172;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+    .press-image {
+        width: 15%;
+        margin: 20px 20px 50px ;
+    }
+    /* 上左右下 */
+
+    #pricing {
+        padding: 100px;
+        text-align: center;
+    }
+
+    .pricing-col {
+        padding: 3% 2%;
+
+    }
+
+
+    /* media query @media <type> <feature> */
+/* 小於 1028px */
+    @media (max-width: 1028px) {
+
+        #title {
+            text-align: center;
+        }
+
+        .title-image {
+            position: static;
+            transform: rotate(0);
+        }
+    }
+
+        #cta {
+            background-color:#ff4c68;
+            color: #fff;
+            padding: 7% 15%;
+            text-align: center;
+
+
+    }
+
+        .cta-heading {
+            font-family: "Montserrat";
+            font-size: 3.5rem;
+            line-height: 1.5;
+            
+        }
+
+        #footer {
+            padding: 7% 15%;
+            text-align: center;
+        }
+
+        .social-icon {
+            padding: 20px 10px;
+
+        }
+
+        /* inline style="color: orange" > id > class > html tag<h1> */
